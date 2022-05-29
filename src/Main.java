@@ -26,18 +26,17 @@ public class Main {
 
 
     public static void main(String[] args) {
-        //arr(new String[][]{{"1"},{"2"},{"3"},{"4"}});
         String[][] a = new String[][]{{"1","2","2","2"}, {"2","2","2","2"}, {"3","2","2","2"}, {"4","2","2","2"}};
         try {
             try {
                 int result = arr(a);
                 System.out.println(result);
             } catch (MyArraySizeException e) {
-                System.out.println("Размер массива не соответствует");
+                System.out.println("ГђГ Г§Г¬ГҐГ° Г¬Г Г±Г±ГЁГўГ  Г­ГҐ Г±Г®Г®ГІГўГҐГІГ±ГІГўГіГҐГІ");
             }
         } catch (MyArrayDataException e) {
-            System.out.println("В массиве лежит неправильное значение ");
-            System.out.println("В этой ячейке "+ e.getI() +e.getJ());
+            System.out.println("Г‚ Г¬Г Г±Г±ГЁГўГҐ Г«ГҐГ¦ГЁГІ Г­ГҐГЇГ°Г ГўГЁГ«ГјГ­Г®ГҐ Г§Г­Г Г·ГҐГ­ГЁГҐ ");
+            System.out.println("Г‚ ГЅГІГ®Г© ГїГ·ГҐГ©ГЄГҐ "+ e.getI() +e.getJ());
         }
     }
 }
